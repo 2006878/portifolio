@@ -58,26 +58,26 @@ st.markdown("---")
 # Contatos
 st.subheader("Contato")
 
-with st.form(key="contato"):
-    nome = st.text_input("Nome")
-    email = st.text_input("Email")
-    mensagem = st.text_area("Mensagem")
-    submit = st.form_submit_button("Enviar")
+# with st.form(key="contato"):
+#     nome = st.text_input("Nome")
+#     email = st.text_input("Email")
+#     mensagem = st.text_area("Mensagem")
+#     submit = st.form_submit_button("Enviar")
 
-if submit:
+# if submit:
 
-    # Crie a mensagem
-    mensagem = f"""
-    Nome: {nome}\n
-    Email: {email}\n
-    Mensagem: {mensagem}
-    """
-    mensagem = quote(mensagem)
-    whatsapp_url = f"https://api.whatsapp.com/send?phone=5535992579211&text={mensagem}"
-    webbrowser.open(whatsapp_url)
+#     # Crie a mensagem
+#     mensagem = f"""
+#     Nome: {nome}\n
+#     Email: {email}\n
+#     Mensagem: {mensagem}
+#     """
+#     mensagem = quote(mensagem)
+#     whatsapp_url = f"https://api.whatsapp.com/send?phone=5535992579211&text={mensagem}"
+#     webbrowser.open(whatsapp_url)
 
-    # Exiba uma mensagem de sucesso
-    st.success("Mensagem enviada com sucesso!")
+#     # Exiba uma mensagem de sucesso
+#     st.success("Mensagem enviada com sucesso!")
 
 link_url = "https://www.linkedin.com/in/tairone-amaral/"
 link_wpp = "https://api.whatsapp.com/send?phone=5535992579211"
