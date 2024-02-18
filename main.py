@@ -1,7 +1,11 @@
 import streamlit as st
-from PIL import Image
+# from PIL import Image
 from st_pages import Page, show_pages
 import base64
+# from email.mime.text import MIMEText
+# import smtplib
+import webbrowser
+from urllib.parse import quote
 
 # Carreguando o ícone da aba
 favicon = "img/dados.png"
@@ -52,14 +56,35 @@ st.write("Objetivos: Impactar cada vez mais pessoas, colaborando na construção
 st.markdown("---")
 
 # Contatos
-st.subheader("Contatos")
+st.subheader("Contato")
+
+with st.form(key="contato"):
+    nome = st.text_input("Nome")
+    email = st.text_input("Email")
+    mensagem = st.text_area("Mensagem")
+    submit = st.form_submit_button("Enviar")
+
+if submit:
+
+    # Crie a mensagem
+    mensagem = f"""
+    Nome: {nome}\n
+    Email: {email}\n
+    Mensagem: {mensagem}
+    """
+    mensagem = quote(mensagem)
+    whatsapp_url = f"https://api.whatsapp.com/send?phone=5535992579211&text={mensagem}"
+    webbrowser.open(whatsapp_url)
+
+    # Exiba uma mensagem de sucesso
+    st.success("Mensagem enviada com sucesso!")
+
 link_url = "https://www.linkedin.com/in/tairone-amaral/"
 link_wpp = "https://api.whatsapp.com/send?phone=5535992579211"
 qr_linkedin = "img/QRLinkedin.png"
 qr_whatsapp = "img/logo_wpp.png"
 
 # Adiciona os QRCode dos contatos
-
 def get_base64(image_path):
     with open(image_path, "rb") as image_file:
         return base64.b64encode(image_file.read()).decode('utf-8')
