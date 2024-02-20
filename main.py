@@ -14,12 +14,12 @@ favicon = "img/dados.png"
 st.set_page_config(page_title="Tairone Amaral", page_icon=favicon)
 
 # Menu lateral
-# show_pages(
-#     [
-#         Page("exemplo1.py", "Exemplo 1", icon="📈"),
-#         Page("exemplo2.py", "Exemplo 2", icon="📈")
-#     ]
-# )
+show_pages(
+    [
+        Page("main.py", "Home", icon="📊"),
+        Page("exemplo2.py", "Nuvem de Palavras", icon="📈")
+    ]
+)
 
 # Define o banner
 banner_image = "img/banner.jpeg"
