@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 from wordcloud import WordCloud
 from nltk.corpus import stopwords
 from PIL import Image, ImageChops
+import nltk
 
 # Carreguando o ícone da aba
 favicon = "img/dados.png"
@@ -88,3 +89,4 @@ if st.button("Gerar nuvem de palavras"):
       file_name='wordcloud.png',
       mime='image/png'
   )
+print(nltk.data.path)
