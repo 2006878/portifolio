@@ -34,11 +34,11 @@ def gerar_nuvem_palavras(texto):
     Buffer em memória contendo a imagem da nuvem de palavras em formato PNG.
   """
 
-  stopwords = set(stopwords)
+  stopwords = set()
   
   with open("portuguese.txt", "r") as f:
     for line in f:
-      stopwords.append(line.strip())
+      stopwords.add(line.strip())
 
   # Gerando a nuvem de palavras
   wordcloud = WordCloud(
@@ -98,4 +98,3 @@ if st.button("Gerar nuvem de palavras"):
       file_name='wordcloud.png',
       mime='image/png'
   )
-print(nltk.data.path)
