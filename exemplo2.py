@@ -6,6 +6,11 @@ from nltk.corpus import stopwords
 from PIL import Image, ImageChops
 import nltk
 
+if stopwords:
+  pass
+else:
+  nltk.download('stopwords')
+
 # Carreguando o ícone da aba
 favicon = "img/dados.png"
 
