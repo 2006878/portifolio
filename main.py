@@ -16,8 +16,9 @@ st.set_page_config(page_title="Tairone Amaral", page_icon=favicon)
 # Menu lateral
 show_pages(
     [
-        Page("main.py", "Home", icon="📊"),
-        Page("wordcloud.py", "Nuvem de Palavras", icon="📈")
+        Page("main.py", "Home", icon="🏠"),
+        Page("wordcloud/wordcloud.py", "Nuvem de Palavras", icon="💭"),
+        Page("predict/predict.py", "Diagnóstico Preliminar", icon="🩺"),
     ]
 )
 
