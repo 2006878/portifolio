@@ -18,7 +18,7 @@ favicon = "img/dados.png"
 st.set_page_config(page_title="Nuvem de Palavras", page_icon=favicon)
 
 # Define o banner
-banner_image = "img/banner.jpeg"
+banner_image = "img/cloud.png"
 
 # Adiciona o banner ao aplicativo
 st.image(banner_image, use_column_width=True)

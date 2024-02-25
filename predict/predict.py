@@ -16,6 +16,12 @@ def sintomas_para_pesos(sintomas_de_entrada):
     pesos = [pesos_de_sintomas[sintoma] for sintoma in sintomas_de_entrada]
     return pesos
 
+# Define o banner
+banner_image = full_path + "/img/predict.png"
+
+# Adiciona o banner ao aplicativo
+st.image(banner_image, use_column_width=True)
+
 # Streamlit app
 st.title("Apoio ao profissional de saúde no pré-diagnóstico de doenças.")
 st.markdown("#### Selecione os sintomas:")
