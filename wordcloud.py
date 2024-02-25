@@ -76,7 +76,9 @@ def gerar_nuvem_palavras(texto):
 # Interface do Streamlit
 st.title("Nuvem de palavras")
 
-st.subheader("Insira o texto que deseja usar para gerar a nuvem de palavras:")
+st.subheader("Imagine um turbilhão de palavras que representam as ideias mais importantes de um texto. Essa é a Nuvem de Palavras! Ela transforma textos em imagens vívidas e fáceis de entender, revelando os temas e conceitos principais.")
+
+st.markdown("#### Insira o texto que deseja usar para gerar a nuvem de palavras:")
 
 # Entrada de texto
 texto = st.text_area("Texo:", height=100)
