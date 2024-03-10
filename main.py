@@ -4,8 +4,8 @@ from st_pages import Page, show_pages
 import base64
 # from email.mime.text import MIMEText
 # import smtplib
-import webbrowser
-from urllib.parse import quote
+# import webbrowser
+# from urllib.parse import quote
 
 # Carreguando o ícone da aba
 favicon = "img/dados.png"
@@ -19,6 +19,7 @@ show_pages(
         Page("main.py", "Home", icon="🏠"),
         Page("wordcloud/wordcloud.py", "Nuvem de Palavras", icon="💭"),
         Page("predict/predict.py", "Diagnóstico Preliminar", icon="🩺"),
+        Page("groq/chat.py", "Annelise ChatBot", icon="🤖")
     ]
 )
 
