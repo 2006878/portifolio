@@ -37,5 +37,4 @@ if user_input:
     # Adiciona uma margem à resposta do chatbot
     st.markdown("***Resposta do chatbot:***")
     st.write(chat_completion.choices[0].message.content)
-    st.write("**Este chatbot foi criado com o modelo ", chat_completion.model, " usando a API da Groq.**")
-    st.write("**O tempo para resposta foi de ", chat_completion.usage.completion_time, " segundos.**")
+    st.warning("**Este chatbot foi criado com o modelo " + chat_completion.model + " usando a API da Groq. O tempo para resposta foi de " + str(chat_completion.usage.completion_time) + " segundos.**")

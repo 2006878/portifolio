@@ -106,5 +106,5 @@ if precautions_string:
     st.write(precautions_string)
 
 st.warning(
-    "Esta versão do aplicativo foi treinado com algorítmos de aprendizado de máquina em um conjunto pequeno de dados e fornece apenas uma previsão preliminar e não substitui o diagnóstico e tratamento médico profissional."
+    "Esta versão do aplicativo serve apenas para mostrar quais as entradas do usuário (profissional de saúde) e saídas (para o mesmo o apoiando no diagnóstico) dessa aplicação, portanto os resultados não são reais e não foram extraídos do modelo original o qual teve 93 por cento de acurária na previsão da hipótese diagnóstica. Este modelo foi treinado com algorítmos de aprendizado de máquina em um conjunto de dados e fornece apenas uma previsão preliminar e não substitui o diagnóstico e tratamento médico profissional."
 )
