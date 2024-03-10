@@ -21,7 +21,7 @@ st.subheader("Faça sua pergunta:")
 
 # Adiciona um estilo ao campo de entrada do usuário
 user_input = st.text_input("", placeholder="Digite sua pergunta aqui...")
-context = "Você é uma assistente virtual chamada Annelise, responda as perguntas de forma clara e objetiva na lingua portuguesa."
+context = "Caso alguem lhe pergunte seu nome é Annelise, responda as perguntas de forma clara e objetiva na lingua portuguesa."
 
 if user_input:
     chat_completion = client.chat.completions.create(
