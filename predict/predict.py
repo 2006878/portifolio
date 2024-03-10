@@ -106,5 +106,7 @@ if precautions_string:
     st.write(precautions_string)
 
 st.warning(
-    "Esta versão do aplicativo serve apenas para mostrar quais as entradas do usuário (profissional de saúde) e saídas (para o mesmo o apoiando no diagnóstico) dessa aplicação, portanto os resultados não são reais e não foram extraídos do modelo original o qual teve 93 por cento de acurária na previsão da hipótese diagnóstica. Este modelo foi treinado com algorítmos de aprendizado de máquina em um conjunto de dados e fornece apenas uma previsão preliminar e não substitui o diagnóstico e tratamento médico profissional."
+    """Esta versão do aplicativo é uma demonstração que permite visualizar as entradas do usuário (profissionais de saúde); e as saídas do modelo (para apoiar o diagnóstico do mesmo).
+    É importante ressaltar que os resultados apresentados nesta demonstração NÃO são reais e NÃO foram extraídos do modelo original, que obteve 93% de acurácia na previsão da hipótese diagnóstica. Esse modelo foi treinado com algoritmos de aprendizado de máquina e fornece apenas uma previsão preliminar.
+    Este aplicativo NÃO substitui o diagnóstico e o tratamento médico profissional. Consulte sempre um profissional de saúde qualificado para obter um diagnóstico e tratamento adequados."""
 )
